@@ -9,10 +9,6 @@ fn main(){
 }
 
 /*
-    * fn sözdizimi ile Rust programlama dilinde fonksiyonlar oluşturuluyor. 
-    * fn main() ise özel bir fonksiyondur. 
-    * Rust programında her zaman çalışan ilk koddur.
-
     * Fonksiyon içerisinde bulunan `println!` ekrana veri bastırabiliyoruz. 
     * Buradaki !(ünlem) işareti Rust dilinde makroları tanımlanır. 
     * Yani println! yaptığımızda bir makro çağırmış oluyoruz. 
