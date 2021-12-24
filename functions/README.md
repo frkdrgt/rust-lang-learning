@@ -37,7 +37,7 @@ Parantezlerin içerisinde **parametre_adi:veri_tipi** şeklinde tanımlanır.
 fn main() {
     println!("Hello, world!");
 
-    print_number();
+    print_number(5);
 }
 
 fn print_number(x: i32) {
