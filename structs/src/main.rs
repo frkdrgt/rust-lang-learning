@@ -35,7 +35,15 @@ fn main() {
     };
     println!("{} {}", another_copy_moderator.first_name, another_copy_moderator.last_name);
     */
+
+    let black = Color(0,0,0);
+    println!("{} {} {}",black.0,black.1,black.2);
+
+    let condition = AlwaysEqual;
 }
+
+struct Color(i32, i32 ,i32);
+struct AlwaysEqual;
 
 fn create_user (first_name: String, last_name: String) -> User {
     User {

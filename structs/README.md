@@ -173,3 +173,21 @@ fn create_user (first_name: String, last_name: String) -> User {
     }
 }
 ```
+## Tuple Struct
+Rust dilinde tuple yapılarına benzer struct yapıları oluşturabiliriz. Bunlara tuple struct denilmektedir. Sadece veri tiplerinin tanımlandığı içerisinde field olmayan struct yapılarıdır.
+```sh
+struct Color(i32, i32, i32);
+fn main() {
+    let black = Color(0,0,0);
+    println!("{} {} {}",black.0,black.1,black.2);
+}
+```
+Tuple struct, tuple gibi davrandığı için değerlere ulaşılırken indexleri üzerinden erişebiliyoruz.
+## Unit-Like Structs
+Rust dilinde field kullanmadan tanımlanan structlara **unit-like structs** denilmektedir. Bir tür üzerinde veri depolamak istemediğimiz zamanlarda kullanmak için uygun olabilir.
+```sh
+struct AlwaysEqual;
+fn main() {
+    let condition = AlwaysEqual;
+}
+```
